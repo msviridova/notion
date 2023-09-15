@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Indie Flower', cursive;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #272727;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #e09fc4;
+		}
+
+		.border {
+			border: 0px solid #e09fc4;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #e09fc4;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="vision" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-glasses"></i> Vision</a>
+		<a id="plan" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-days"></i> Plan</a>
+		<a id="productivity" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Productivity</a>
+		<a id="organization" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-sitemap"></i> Organization</a>
+		<a id="finance" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-coins"></i> Finance</a>
+		<a id="fitness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-dumbbell"></i> Fitness</a>
+		<a id="nutrition" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-apple-whole"></i> Nutrition</a>
+		<a id="welness" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-spa"></i> Welness</a>
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://home.com", '_blank').focus();
+			else if (id == "vision")
+				window.open("https://vision.com", '_blank').focus();
+			else if (id == "plan")
+				window.open("https://plan.com", '_blank').focus();
+			else if (id == "productivity")
+				window.open("https://productivity.com", '_blank').focus();
+			else if (id == "organization")
+				window.open("https://organization.com", '_blank').focus();
+			else if (id == "finance")
+				window.open("https://finance.com", '_blank').focus();
+			else if (id == "fitness")
+				window.open("https://fitness.com", '_blank').focus();
+			else if (id == "nutrition")
+				window.open("https://nutrition.com", '_blank').focus();
+			else if (id == "wellness")
+				window.open("https://welness.com", '_blank').focus();
+
+		}
+	</script>
+
+
+</body>
+
+</html>
